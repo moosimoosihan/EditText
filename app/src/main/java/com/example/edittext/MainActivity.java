@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_move;
+    private Button btn_move2;
     private EditText et_test;
     private String str;
     EditText et_id;
@@ -45,6 +46,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, SubActivity.class);
                 intent.putExtra("str",str);
                 startActivity(intent); // 액티비티 이동.
+            }
+        });
+        btn_move2 = findViewById(R.id.btn_move2);
+        btn_move2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent2 = new Intent(MainActivity.this, ListActivity.class);
+
+                startActivity(intent2); // 액티비티 이동.
             }
         });
 
