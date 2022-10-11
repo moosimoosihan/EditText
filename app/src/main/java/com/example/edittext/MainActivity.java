@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private String str;
     EditText et_id;
     Button btn_test;
+    ImageView test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent); // 액티비티 이동.
             }
         });
+
+        test = (ImageView)findViewById(R.id.test);
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Toast.makeText(getApplicationContext(), "무시무시한스무디",Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
 
 
