@@ -3,15 +3,15 @@ package com.example.edittext;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WebView extends AppCompatActivity {
+public class WebViewActivity extends AppCompatActivity {
 
     private WebView webView;
-    private String url = "https://naver.com";
+    private String url = "https://www.naver.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

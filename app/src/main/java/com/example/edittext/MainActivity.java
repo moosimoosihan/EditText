@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent3 = new Intent(MainActivity.this, WebView.class);
+                Intent intent3 = new Intent(MainActivity.this, WebViewActivity.class);
 
                 startActivity(intent3); // 액티비티 이동.
             }
