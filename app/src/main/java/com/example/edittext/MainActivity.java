@@ -1,7 +1,5 @@
 package com.example.edittext;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +8,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_move;
     private Button btn_move2;
+    private Button btn_move3;
     private EditText et_test;
     private String str;
     EditText et_id;
@@ -59,6 +60,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        btn_move3 = findViewById(R.id.btn_move3);
+        btn_move3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent3 = new Intent(MainActivity.this, WebView.class);
+
+                startActivity(intent3); // 액티비티 이동.
+            }
+        });
         test = (ImageView)findViewById(R.id.test);
         test.setOnClickListener(new View.OnClickListener() {
             @Override
