@@ -1,10 +1,13 @@
 package com.example.edittext;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +15,8 @@ public class WebViewActivity extends AppCompatActivity {
 
     private WebView webView;
     private String url = "https://www.naver.com";
+    private Button btn_home;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +28,14 @@ public class WebViewActivity extends AppCompatActivity {
         webView.loadUrl(url);
         webView.setWebChromeClient(new WebChromeClient());
         webView.setWebViewClient(new WebViewClientClass());
-
+        btn_home = findViewById(R.id.btn_home);
+        btn_home.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(WebViewActivity.this, MainActivity.class);
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
     }
 
     @Override
