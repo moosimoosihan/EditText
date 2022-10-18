@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_move2;
     private Button btn_move3;
     private Button btn_move4;
+    private Button btn_move5;
     private EditText et_test;
     private String str;
     EditText et_id;
@@ -81,6 +82,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent4 = new Intent(MainActivity.this, StopWatch.class);
 
                 startActivity(intent4); // 액티비티 이동.
+            }
+        });
+
+        btn_move5 = findViewById(R.id.btn_move5);
+        btn_move5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent5 = new Intent(MainActivity.this, ActivityCreateText.class);
+
+                startActivity(intent5); // 액티비티 이동.
             }
         });
 
