@@ -59,4 +59,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="스톱워치"/>
+
+    <Button
+        android:id="@+id/btn_move9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="할일"/>
+
 </LinearLayout>
