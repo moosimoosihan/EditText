@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btn_move7;
     private Button btn_move5;
+
+    private Button btn_move8;
     private EditText et_test;
     private String str;
     EditText et_id;
@@ -111,6 +113,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        btn_move8 = findViewById(R.id.btn_move8);
+        btn_move8.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent8 = new Intent(MainActivity.this, Recognizerintent.class);
+
+                startActivity(intent8); // 액티비티 이동.
+            }
+        });
 
         test = (ImageView)findViewById(R.id.test);
         test.setOnClickListener(new View.OnClickListener() {

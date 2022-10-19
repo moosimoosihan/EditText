@@ -26,6 +26,9 @@
             android:name=".ActivityCreateText"
             android:exported="false" />
         <activity
+            android:name=".Recognizerintent"
+            android:exported="false" />
+        <activity
             android:name=".StopWatch"
             android:exported="false" />
         <activity
