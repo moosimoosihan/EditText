@@ -100,17 +100,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_move5 = findViewById(R.id.btn_move5);
-        btn_move5.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-
-                Intent intent5 = new Intent(MainActivity.this, ActivityCreateText.class);
-
-                startActivity(intent5); // 액티비티 이동.
-            }
-        });
-
         btn_move7 = findViewById(R.id.btn_move7);
         btn_move7.setOnClickListener(new View.OnClickListener(){
             @Override

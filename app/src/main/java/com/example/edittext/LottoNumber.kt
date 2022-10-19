@@ -14,7 +14,7 @@ class LottoNumber : AppCompatActivity() {   lateinit var lottoText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_lotto_number)
 
         //객체 생성
         lottoText = findViewById(R.id.lottoText)

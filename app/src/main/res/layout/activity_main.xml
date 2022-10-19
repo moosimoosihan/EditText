@@ -78,12 +78,5 @@
         android:layout_height="wrap_content"
         android:text="로또번호 생성기"/>
 
-
-        <Button
-            android:id="@+id/btn_move5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="동적 텍스트 뷰"/>
-
         </LinearLayout>
 </LinearLayout>
