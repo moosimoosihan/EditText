@@ -20,6 +20,9 @@
             android:name=".LottoNumber"
             android:exported="false" />
         <activity
+            android:name=".ActivityCreateText"
+            android:exported="false" />
+        <activity
             android:name=".StopWatch"
             android:exported="false" />
         <activity
