@@ -84,5 +84,11 @@
         android:layout_height="wrap_content"
         android:text="로또번호 생성기"/>
 
+    <Button
+        android:id="@+id/btn_move10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뷰페이저"/>
+
         </LinearLayout>
 </LinearLayout>

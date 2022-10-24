@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_move5;
 
     private Button btn_move8;
+    private Button btn_move10;
     private EditText et_test;
     private String str;
     EditText et_id;
@@ -122,6 +123,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent8 = new Intent(MainActivity.this, Recognizerintent.class);
 
                 startActivity(intent8); // 액티비티 이동.
+            }
+        });
+
+        btn_move10 = findViewById(R.id.btn_move10);
+        btn_move10.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent10 = new Intent(MainActivity.this, ViewPager33.class);
+
+                startActivity(intent10); // 액티비티 이동.
             }
         });
 
