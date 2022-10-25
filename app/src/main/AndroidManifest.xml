@@ -17,7 +17,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ViewPager"
+            android:name=".VPager1"
             android:exported="false" />
         <activity
             android:name=".ToDoList"

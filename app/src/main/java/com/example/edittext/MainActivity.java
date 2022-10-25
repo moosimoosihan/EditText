@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent2 = new Intent(MainActivity.this, ListActivity.class);
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
 
-                startActivity(intent2); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent3 = new Intent(MainActivity.this, WebViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
 
-                startActivity(intent3); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
@@ -86,9 +86,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent4 = new Intent(MainActivity.this, StopWatch.class);
+                Intent intent = new Intent(MainActivity.this, StopWatch.class);
 
-                startActivity(intent4); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
@@ -97,9 +97,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent9 = new Intent(MainActivity.this, ToDoList.class);
+                Intent intent = new Intent(MainActivity.this, ToDoList.class);
 
-                startActivity(intent9); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
@@ -108,9 +108,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent7 = new Intent(MainActivity.this, LottoNumber.class);
+                Intent intent = new Intent(MainActivity.this, LottoNumber.class);
 
-                startActivity(intent7); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
@@ -120,9 +120,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent8 = new Intent(MainActivity.this, Recognizerintent.class);
+                Intent intent = new Intent(MainActivity.this, Recognizerintent.class);
 
-                startActivity(intent8); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
@@ -131,9 +131,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent10 = new Intent(MainActivity.this, ViewPager33.class);
+                Intent intent = new Intent(MainActivity.this, VPager1.class);
 
-                startActivity(intent10); // 액티비티 이동.
+                startActivity(intent); // 액티비티 이동.
             }
         });
 
