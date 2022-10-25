@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                Intent intent = new Intent(MainActivity.this, VPager1.class);
+                Intent intent = new Intent(MainActivity.this, Vpager2.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
