@@ -41,9 +41,13 @@
         android:layout_height="100dp"
         android:src="@mipmap/ic_launcher"/>
     </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
@@ -91,4 +95,19 @@
         android:text="뷰페이저"/>
 
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btn_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음악재생"/>
+    </LinearLayout>
+
+</LinearLayout>
 </LinearLayout>

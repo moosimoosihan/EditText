@@ -1,6 +1,7 @@
 package com.example.edittext;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,11 +25,26 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btn_move8;
     private Button btn_move10;
+    private Button btn_music;
+    MediaPlayer mediaPlayer;
+
     private EditText et_test;
     private String str;
     EditText et_id;
     Button btn_test;
     ImageView test;
+
+    //액티비티가 종료될때 이곳을 실행
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if(mediaPlayer != null){
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +148,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, Vpager2.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_music = findViewById(R.id.btn_music);
+        btn_music.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, MusicPlayerExample.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
