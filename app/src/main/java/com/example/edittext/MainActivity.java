@@ -1,5 +1,6 @@
 package com.example.edittext;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_music;
     private Button btn_picv;
     private Button btn_picv2;
+    private Button btn_Retrofit2;
 
     MediaPlayer mediaPlayer;
 
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -184,6 +187,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, PicView2.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_Retrofit2 = findViewById(R.id.btn_Retrofit2);
+        btn_Retrofit2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, Retrofit2Ex.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
