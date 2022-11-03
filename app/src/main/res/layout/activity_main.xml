@@ -100,13 +100,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btn_music"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="음악재생"/>
+
+        <Button
+            android:id="@+id/btn_picv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진첩"/>
     </LinearLayout>
 
 </LinearLayout>

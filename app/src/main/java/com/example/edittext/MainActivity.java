@@ -164,6 +164,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_music = findViewById(R.id.btn_picv);
+        btn_music.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, PicView.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
         test = (ImageView)findViewById(R.id.test);
         test.setOnClickListener(new View.OnClickListener() {
             @Override
