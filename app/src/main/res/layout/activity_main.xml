@@ -114,6 +114,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="사진첩"/>
+
+        <Button
+            android:id="@+id/btn_picv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진첩2"/>
     </LinearLayout>
 
 </LinearLayout>

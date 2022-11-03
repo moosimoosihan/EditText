@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_move8;
     private Button btn_move10;
     private Button btn_music;
+    private Button btn_picv;
+    private Button btn_picv2;
+
     MediaPlayer mediaPlayer;
 
     private EditText et_test;
@@ -164,12 +167,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_music = findViewById(R.id.btn_picv);
-        btn_music.setOnClickListener(new View.OnClickListener(){
+        btn_picv = findViewById(R.id.btn_picv);
+        btn_picv.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, PicView.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_picv2 = findViewById(R.id.btn_picv2);
+        btn_picv2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, PicView2.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
