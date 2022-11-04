@@ -126,6 +126,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="레트로핏2"/>
+        <Button
+            android:id="@+id/btn_MakeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동적 텍스트"/>
 
     </LinearLayout>
 

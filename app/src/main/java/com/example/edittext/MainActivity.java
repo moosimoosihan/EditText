@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_picv;
     private Button btn_picv2;
     private Button btn_Retrofit2;
+    private Button btn_MakeTextView;
+
 
     MediaPlayer mediaPlayer;
 
@@ -198,6 +200,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, Retrofit2Ex.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_MakeTextView = findViewById(R.id.btn_MakeTextView);
+        btn_MakeTextView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, MakeTextView.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
