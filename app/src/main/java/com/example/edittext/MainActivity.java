@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_Retrofit2;
     private Button btn_MakeTextView;
     private Button btn_HTTPGlideImageView;
+    private Button btn_Retrofit2Btc;
 
 
     MediaPlayer mediaPlayer;
@@ -223,6 +224,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, HTTPGlideImageView.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_Retrofit2Btc = findViewById(R.id.btn_Retrofit2Btc);
+        btn_Retrofit2Btc.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, Retrofit2Btc.class);
 
                 startActivity(intent); // 액티비티 이동.
             }

@@ -138,6 +138,12 @@
             android:layout_height="wrap_content"
             android:text="웹 이미지 뷰"/>
 
+        <Button
+            android:id="@+id/btn_Retrofit2Btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비트코인"/>
+
     </LinearLayout>
 
 </LinearLayout>
