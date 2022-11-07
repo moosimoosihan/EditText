@@ -159,6 +159,12 @@
             android:layout_height="wrap_content"
             android:text="달력"/>
 
+        <Button
+            android:id="@+id/btn_Vibrator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진동"/>
+
     </LinearLayout>
 
 </LinearLayout>

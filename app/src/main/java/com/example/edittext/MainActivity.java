@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_HTTPGlideImageView;
     private Button btn_Retrofit2Btc;
     private Button btn_Calendar;
+    private Button btn_Viberator;
+
 
 
     MediaPlayer mediaPlayer;
@@ -247,6 +249,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, Calendar.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_Viberator = findViewById(R.id.btn_Vibrator);
+        btn_Viberator.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, Vibrator_Activity.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
