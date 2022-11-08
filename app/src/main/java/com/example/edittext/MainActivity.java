@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_Retrofit2Btc;
     private Button btn_Calendar;
     private Button btn_Viberator;
+    private Button btn_Ringtone;
 
 
 
@@ -260,6 +261,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent = new Intent(MainActivity.this, Vibrator_Activity.class);
+
+                startActivity(intent); // 액티비티 이동.
+            }
+        });
+
+        btn_Ringtone = findViewById(R.id.btn_Ringtone);
+        btn_Ringtone.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(MainActivity.this, Ringtone.class);
 
                 startActivity(intent); // 액티비티 이동.
             }
